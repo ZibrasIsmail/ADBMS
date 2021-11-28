@@ -10,7 +10,7 @@ app.use(morgan("dev"));
 
 // Import all routes
 const auth = require("./routes/auth");
-// const courses = require("./routes/course");
+ const courses = require("./routes/course");
 // const careercounsellors = require("./routes/careerCounsellor");
 // const exams = require("./routes/exam");
 const user = require("./routes/user");
@@ -35,7 +35,7 @@ app.use("/api", auth);
 //   }
 // });
 
-// app.use("/api", courses);
+ app.use("/api", courses);
 // app.use("/api", careercounsellors);
 // app.use("/api", exams);
 app.use("/api", user);
