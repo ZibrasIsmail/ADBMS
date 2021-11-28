@@ -1,7 +1,7 @@
 // core components/views for Admin layout
 // import Institutes from "./views/Institutes/Institutes"
 // import Events from "./views/Events/Events"
-// import Courses from "./views/Courses/Courses"
+import Courses from "./views/Courses/Courses"
 // import Exams from "./views/Exams/Exams"
 // import CareerCounsellor from "./views/CareerCounsellor/CareerCounsellor";
 import PendingApprovals from "./views/Pending Approvals/Pending Approvals";
@@ -33,14 +33,14 @@ const dashboardRoutes = [
   },
 
   
-  // {
-  //   path: "/Courses",
-  //   name: "Courses",
-  //   icon: DataEntryIcon,
-  //   component: Courses,
-  //   layout: "/admin",
-  //   users: ["admin", "student", "institute", "career_counsellor"],
-  // },
+  {
+    path: "/Courses",
+    name: "Courses",
+    icon: DataEntryIcon,
+    component: Courses,
+    layout: "/admin",
+    users: ["admin", "student", "institute", "career_counsellor"],
+  },
   // {
   //   path: "/Institutes",
   //   name: "Institutes",
