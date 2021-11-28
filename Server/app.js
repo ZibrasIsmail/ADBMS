@@ -10,12 +10,12 @@ app.use(morgan("dev"));
 
 // Import all routes
 const auth = require("./routes/auth");
- const courses = require("./routes/course");
+const courses = require("./routes/course");
 const careercounsellors = require("./routes/careerCounsellor");
 // const exams = require("./routes/exam");
 const user = require("./routes/user");
- const institutes = require("./routes/institute");
-// const events = require("./routes/event");
+const institutes = require("./routes/institute");
+const events = require("./routes/event");
 // const advertisment = require("./routes/advertisement");
 const student = require("./routes/student");
 
@@ -35,12 +35,12 @@ app.use("/api", auth);
 //   }
 // });
 
- app.use("/api", courses);
+app.use("/api", courses);
 app.use("/api", careercounsellors);
 // app.use("/api", exams);
 app.use("/api", user);
- app.use("/api", institutes);
-// app.use("/api", events);
+app.use("/api", institutes);
+app.use("/api", events);
 // app.use("/api", advertisment);
 app.use("/api", student);
 
