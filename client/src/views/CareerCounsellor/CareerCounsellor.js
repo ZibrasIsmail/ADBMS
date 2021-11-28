@@ -126,48 +126,10 @@ const CareerCounsellor = () => {
         <CareerCounsellorForm />
       </Popup>
 
-      <Grid
-        style={{ float: "left" }}
-        container
-        justify="flex-start"
-        spacing={3}
-      >
-        <TextField
-          label="Search CareerCounsellor By Name"
-          variant="outlined"
-          onChange={(e) => {
-            setSearchName(e.target.value);
-          }}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchRounded />
-              </InputAdornment>
-            ),
-          }}
-          style={{ paddingBottom: "20px" }}
-        />
-        <TextField
-          label="Search CareerCounsellor By Field"
-          variant="outlined"
-          onChange={(e) => {
-            setSearchField(e.target.value);
-          }}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchRounded />
-              </InputAdornment>
-            ),
-          }}
-          style={{ paddingBottom: "20px" }}
-        />
-      </Grid>
-
       <Grid container justify="flex-start" spacing={3}>
         {(() => {
           const careercounsellor = [];
-          filteredCareerCounsellor.map((r) => {
+          careerCounsellorData.map((r) => {
             careercounsellor.push(
               <Grid item xs={12} sm={6} md={4} lg={3}>
                 <CareerCounsellorCard
@@ -176,7 +138,7 @@ const CareerCounsellor = () => {
                 />
               </Grid>
             );
-            return filteredCareerCounsellor;
+            return careerCounsellorData;
           });
           return careercounsellor;
         })()}

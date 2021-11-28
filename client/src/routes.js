@@ -2,7 +2,7 @@
 import Institutes from "./views/Institutes/Institutes"
 import Events from "./views/Events/Events"
 import Courses from "./views/Courses/Courses"
-// import Exams from "./views/Exams/Exams"
+import Exams from "./views/Exams/Exams"
 import CareerCounsellor from "./views/CareerCounsellor/CareerCounsellor";
 import PendingApprovals from "./views/Pending Approvals/Pending Approvals";
 // import Advertisement from "./views/Advertisment/Advertisment";
@@ -23,14 +23,14 @@ const dashboardRoutes = [
   //   users: ['admin'],
   // },
   
-  {
-    path: "/Pending Approvals",
-    name: "Pending Approvals",
-    icon: SettingsIcon,
-    component: PendingApprovals,
-    layout: "/admin",
-    users: ['admin'],
-  },
+  // {
+  //   path: "/Pending Approvals",
+  //   name: "Pending Approvals",
+  //   icon: SettingsIcon,
+  //   component: PendingApprovals,
+  //   layout: "/admin",
+  //   users: ['admin'],
+  // },
 
   
   {
@@ -57,14 +57,14 @@ const dashboardRoutes = [
     layout: "/admin",
     users: ["admin", "student", "institute", "career_counsellor"],
   },
-  // {
-  //   path: "/exams",
-  //   name: "Exams",
-  //   icon: SettingsIcon,
-  //   component: Exams,
-  //   layout: "/admin",
-  //   users: ["admin", "student", "institute", "career_counsellor"],
-  // },
+  {
+    path: "/exams",
+    name: "Exams",
+    icon: SettingsIcon,
+    component: Exams,
+    layout: "/admin",
+    users: ["admin", "student", "institute", "career_counsellor"],
+  },
 
   // {
   //   path: "/advertisements",

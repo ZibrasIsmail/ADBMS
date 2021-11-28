@@ -12,7 +12,7 @@ app.use(morgan("dev"));
 const auth = require("./routes/auth");
 const courses = require("./routes/course");
 const careercounsellors = require("./routes/careerCounsellor");
-// const exams = require("./routes/exam");
+const exams = require("./routes/exam");
 const user = require("./routes/user");
 const institutes = require("./routes/institute");
 const events = require("./routes/event");
@@ -37,7 +37,7 @@ app.use("/api", auth);
 
 app.use("/api", courses);
 app.use("/api", careercounsellors);
-// app.use("/api", exams);
+app.use("/api", exams);
 app.use("/api", user);
 app.use("/api", institutes);
 app.use("/api", events);
