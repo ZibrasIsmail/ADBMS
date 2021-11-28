@@ -1,12 +1,11 @@
 # ADBMS Group Assignment
 
-## To run this project
-First Go to the client folder
-type in terminal install npm 
-run the app by npm start
-go to server folder
-type in terminal install npm 
-run the server by node server
+
+### run this app
+
+- Clone this repo and go to the server directory and run **npm install** and run **node server**
+- goto **client** directory and run **npm install** and run **npm start** as well
+
 
 ## Group Members Contributors
 
