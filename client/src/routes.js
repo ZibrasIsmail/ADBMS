@@ -3,7 +3,7 @@
 // import Events from "./views/Events/Events"
 import Courses from "./views/Courses/Courses"
 // import Exams from "./views/Exams/Exams"
-// import CareerCounsellor from "./views/CareerCounsellor/CareerCounsellor";
+import CareerCounsellor from "./views/CareerCounsellor/CareerCounsellor";
 import PendingApprovals from "./views/Pending Approvals/Pending Approvals";
 // import Advertisement from "./views/Advertisment/Advertisment";
 import ProfilePage from "./views/account/AccountView/ProfilePage";
@@ -76,14 +76,14 @@ const dashboardRoutes = [
   //   users: ["admin", "student", "institute", "career_counsellor"],
   // },
 
-  // {
-  //   path: "/careercounsellor",
-  //   name: "Career Counsellor",
-  //   icon: UsersIcon,
-  //   component: CareerCounsellor,
-  //   layout: "/admin",
-  //   users: ["admin", "student", "institute", "career_counsellor"],
-  // }, 
+   {
+     path: "/careercounsellor",
+     name: "Career Counsellor",
+     icon: UsersIcon,
+     component: CareerCounsellor,
+     layout: "/admin",
+     users: ["admin", "student", "institute", "career_counsellor"],
+   }, 
 
   {
     path: "/profilepage",
