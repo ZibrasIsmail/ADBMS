@@ -117,27 +117,6 @@ const Exams = (props) => {
         <HavePermisson userRoles={["institute"]}>
           <div style={{ float: "right" }}>
             <Toolbar>
-              <ButtonGroup
-                disableElevation
-                variant="contained"
-                color="primary"
-                style={{ marginRight: "20px" }}
-              >
-                <Button
-                  onClick={() => {
-                    setMydata(false);
-                  }}
-                >
-                  All Exams
-                </Button>
-                <Button
-                  onClick={() => {
-                    setMydata(true);
-                  }}
-                >
-                  My Exams
-                </Button>
-              </ButtonGroup>
               <Button
                 onClick={() => {
                   setOpenPopup(true);

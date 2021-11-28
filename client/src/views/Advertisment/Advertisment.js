@@ -97,31 +97,10 @@ const Advertisment = (props) => {
 
   return (
     <>
-      {/* <div style={{}}>
+      <div style={{}}>
         <HavePermisson userRoles={["admin", "institute"]}>
           <div style={{ float: "right" }}>
             <Toolbar>
-              <ButtonGroup
-                disableElevation
-                variant="contained"
-                color="primary"
-                style={{ marginRight: "20px" }}
-              >
-                <Button
-                  onClick={() => {
-                    setMydata(false);
-                  }}
-                >
-                  All Events
-                </Button>
-                <Button
-                  onClick={() => {
-                    setMydata(true);
-                  }}
-                >
-                  My Events
-                </Button>
-              </ButtonGroup>
               <Button
                 onClick={() => {
                   setOpenPopup(true);
@@ -135,7 +114,7 @@ const Advertisment = (props) => {
             </Toolbar>
           </div>
         </HavePermisson>
-      </div> */}
+      </div>
       <Popup
         title="Add Advertisment"
         openPopup={openPopup}
@@ -144,39 +123,17 @@ const Advertisment = (props) => {
         <AdvertismentForm />
       </Popup>
 
-      <Grid container justify="flex-start" spacing={4}>
-        <span>
-          <TextField
-            paddingRight="20.25%"
-            label="Search Event"
-            variant="outlined"
-            onChange={(e) => {
-              console.log("Pass");
-              setSearchName(e.target.value);
-            }}
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchRounded />
-                </InputAdornment>
-              ),
-            }}
-            style={{ paddingBottom: "20px" }}
-          />
-        </span>
-      </Grid>
-
       <Grid container justify="flex-start" spacing={3}>
-        {filteredEvents &&
+        {advertismentData &&
         (() => {
           const advertisment = [];
-          filteredEvents.map((r) => {
+          advertismentData.map((r) => {
             advertisment.push(
               <Grid item xs={12} sm={6} md={4} lg={3}>
                 <AdvertismentCard advertismentData={r} handleDelete={handleDelete} />
               </Grid>
             );
-            return filteredEvents;
+            return advertismentData;
           });
           return advertisment;
         })()}

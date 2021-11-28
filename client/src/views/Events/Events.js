@@ -100,13 +100,6 @@ const Events = (props) => {
         <HavePermisson userRoles={["admin", "institute", "career_counsellor"]}>
           <div style={{ float: "right" }}>
             <Toolbar>
-              <ButtonGroup
-                disableElevation
-                variant="contained"
-                color="primary"
-                style={{ marginRight: "20px" }}
-              >
-              </ButtonGroup>
               <Button
                 onClick={() => {
                   setOpenPopup(true);
