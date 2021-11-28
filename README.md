@@ -18,6 +18,3 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Contributions of any kind welcome!
-
->    NOTE: if you should be on the list of contributors but we forgot you, don't be shy and let us know!
