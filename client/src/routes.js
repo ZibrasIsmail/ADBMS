@@ -1,5 +1,5 @@
 // core components/views for Admin layout
-// import Institutes from "./views/Institutes/Institutes"
+ import Institutes from "./views/Institutes/Institutes"
 // import Events from "./views/Events/Events"
 import Courses from "./views/Courses/Courses"
 // import Exams from "./views/Exams/Exams"
@@ -41,14 +41,14 @@ const dashboardRoutes = [
     layout: "/admin",
     users: ["admin", "student", "institute", "career_counsellor"],
   },
-  // {
-  //   path: "/Institutes",
-  //   name: "Institutes",
-  //   icon: DisDataIcon,
-  //   component: Institutes,
-  //   layout: "/admin",
-  //   users: ["admin", "student", "institute", "career_counsellor"],
-  // },
+  {
+    path: "/Institutes",
+    name: "Institutes",
+    icon: DisDataIcon,
+    component: Institutes,
+    layout: "/admin",
+    users: ["admin", "student", "institute", "career_counsellor"],
+  },
   // {
   //   path: "/Events",
   //   name: "Events",
