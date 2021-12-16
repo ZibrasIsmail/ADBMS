@@ -6,6 +6,24 @@
 - Clone this repo and go to the server directory and run **npm install** and run **node server**
 - goto **client** directory and run **npm install** and run **npm start** as well
 
+### Account credentials
+User Admin
+admin@gmail.com
+admin0147
+
+User Student
+student@gmail.com
+Student123
+
+User Institute
+institute@gmail.com
+institute123
+
+User Counsellor
+careercounsellor@gmail.com
+career123
+
+
 
 ## Group Members Contributors
 
